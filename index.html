@@ -9,39 +9,38 @@
   </head>
   <body class="bg-dark">
     <div class="col-md-6 mx-auto">
-      
+
     <div class="text-center p-5 text-white">
       <h1>Welcome to the RGB game!</h1>
-      <h4 class="pt-4">Match as many colors to there RBG as you can and share with your friends!</h4>
+      <h4 class="pt-4">Match the RGB to its color and get as high score as you can. Good luck!</h4>
     </div>
-    
-    <div class="px-5">
+    <div class="">
       <h2 class="text-white text-center">Score: <span id="score_num">0</span></h2>
       <div id="game-container" class="row">
-        <div id="game-anwsers" class="bg-danger col-md-7 py-3">
-          
+        <div id="game-anwsers" class="bg-white col-md-7 py-1">
+
           <div id="answer-1" class="rounded mx-auto my-3 game-answer">
           </div>
-          
+
           <div id="answer-2" class="rounded mx-auto my-3 game-answer">
           </div>
-          
+
           <div id="answer-3" class="rounded mx-auto my-3 game-answer">
           </div>
-          
+
           <div id="answer-4" class="rounded mx-auto my-3 game-answer">
           </div>
-          
-          
+
+
         </div>
-        <div id="Game-question" class="col-md-5 bg-success py-3 text-white text-center">
-          <h4>Guess the color for:</h4>
-          <h3>{ <span id="game-color-r">214</span> , <span id="game-color-g">25</span> , <span id="game-color-b">0</span> }</h3>
+        <div id="game-question-container" class="col-md-5 bg-success py-3 text-white text-center">
+          <h4>What color is: </h4>
+          <h3 id="game-question"></h3>
         </div>
       </div>
     </div>
-    
-    
+
+
     </div>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
