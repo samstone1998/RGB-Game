@@ -1,4 +1,3 @@
-
 <html>
   <head>
     <title>RGB Game</title>
@@ -11,7 +10,7 @@
     <div class="col-md-6 mx-auto">
 
     <div class="text-center p-5 text-white">
-      <h1>Welcome to the RGB game!</h1>
+      <h1>Welcome to the <span class="text-danger">R</span><span class="text-success">G</span><span class="text-primary">B</span> game!</h1>
       <h4 class="pt-4">Match the RGB to its color and get as high score as you can. Good luck!</h4>
     </div>
     <div class="">
@@ -35,7 +34,8 @@
         </div>
         <div id="game-question-container" class="col-md-5 bg-success py-3 text-white text-center">
           <h4>What color is: </h4>
-          <h3 id="game-question"></h3>
+          <h3 id="game-question" class="pt-2"></h3>
+          <h1 class="pt-5">High score: <span id="game-highest-score"></span></h1>
         </div>
       </div>
     </div>
