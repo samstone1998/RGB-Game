@@ -3,19 +3,35 @@
 
 let answer;
 let score = 0;
+let highest_score = 0;
 let question;
-const check_answer = event => {if(event.target.id === answer){
+
+const check_answer = event => {
+  if(event.target.id === answer){
   score +=1;
   document.getElementById("score_num").innerHTML = score;
+  
 }
 else{
+  if(score > highest_score){
+  document.getElementById('game-highest-score').innerHTML = score;
+  localStorage.highest_score = score;
+  }
   score = 0;
   document.getElementById("score_num").innerHTML = 0;
 }
-generate_challenge()};
+generate_challenge()
+};
 
 
 window.onload = function(){
+  if(localStorage.highest_score != null){
+    highest_score = localStorage.highest_score;
+  }
+  else{
+    localStorage.setItem('highest_score','0');
+  }
+  document.getElementById('game-highest-score').innerHTML = highest_score;
   generate_challenge();
   document.getElementById('answer-1').addEventListener('click',check_answer);
   document.getElementById('answer-2').addEventListener('click',check_answer);
